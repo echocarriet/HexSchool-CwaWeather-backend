@@ -37,7 +37,7 @@ const getKaohsiungWeather = async (req, res) => {
       {
         params: {
           Authorization: CWA_API_KEY,
-          locationName: "高雄市",
+          locationName: "台南市",
         },
       }
     );
@@ -48,7 +48,7 @@ const getKaohsiungWeather = async (req, res) => {
     if (!locationData) {
       return res.status(404).json({
         error: "查無資料",
-        message: "無法取得高雄市天氣資料",
+        message: "無法取得台南市天氣資料",
       });
     }
 
